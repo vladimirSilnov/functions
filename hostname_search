@@ -1,0 +1,11 @@
+def hostname_search(file, ip):
+'''
+function for mapping IP address to hostname
+working with Cisco ASA configuration files
+'''
+  with open(file) as f: 
+    for line in f: 
+      if 'object' in line: 
+        p_line = line 
+      elif ip in line: 
+  return p_line.split()[2],line.split()[1] 
