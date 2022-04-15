@@ -1,4 +1,7 @@
 def bin_ip(ip):
+"""
+Getting IP address as decimal string and returning binary
+"""
     int_ip = []
     for i in ip.split('.'):
         int_ip.append(int(i))
