@@ -1,0 +1,5 @@
+def bin_ip(ip):
+    int_ip = []
+    for i in ip.split('.'):
+        int_ip.append(int(i))
+    return  '{:08b}{:08b}{:08b}{:08b}'.format(*int_ip)
